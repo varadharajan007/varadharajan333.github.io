@@ -1,0 +1,150 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body{
+	font-family: 'Oxygen', sans-serif;
+}
+
+div.parentContainer{
+	margin-top: 50px;
+}
+.navbar-nav{
+	margin: 1.5rem;
+}
+
+.navbar-inverse .navbar-nav>.active>a , .navbar-inverse .navbar-nav>.active>a:hover{
+	box-shadow: none;
+	background-image: none;
+	background-color: #387ed1;
+}
+
+blockquote{
+  display:block;
+  padding:0px;
+  margin-top: 4%;
+  border: none;
+  font-size: 25px;
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  
+  /*Positioning*/
+  position: absolute;
+  bottom: -50%;
+    left: 15%;
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+
+
+.header,footer p {
+	margin: 1rem 7rem;
+}
+
+div.carousel {
+	margin:7rem 0rem;
+}
+
+address{
+	color: white;
+}
+
+nav.navbar{
+	height: 80px;
+}
+nav.navbar-inverse{
+	background-image: none;
+	background-color: #387ed1;
+}
+
+div.carousel-caption img,div.carousel-caption p{
+	float: right;
+	color: black;
+}
+
+footer{
+	bottom: 0px;
+	right: 0px;
+	margin: 3rem 10rem 3rem 0rem;
+	float: right;
+	position: absolute;
+}
+
+div.carousel-caption p{
+	margin: 10px;
+}
+
+div.carousel-inner{
+	height: 200px;
+	vertical-align: center;
+}
+
+div.carousel-caption
+{
+	top: 100%;
+	right: 17%;
+}
+
+div.carousel-inner .item h2{
+	margin: 2rem 5px;
+	letter-spacing: 1px;
+}
+
+.leftButton , .rightButton{
+	background-image: none !important;	
+}
+
+.leftButton .glyphicon , .rightButton .glyphicon
+{
+	color: blue !important;
+}
+
+
+/* ==========================================================================
+   responsive style
+   ========================================================================== */
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+}
+
+@media only screen and (max-width: 375px) {
+    /* phones */
+		blockquote{
+		  margin-top: 25%;
+		  font-size: 15px;
+		}
+
+		blockquote::before{
+		  bottom: 21%;
+    	  left: 5%;
+    	  font-size: 40px;
+		}
+
+		.header,footer p{
+		  margin:0rem 2rem;
+		}
+
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+}
+
+
+
+
+
+
